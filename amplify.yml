@@ -3,9 +3,7 @@ backend:
     phases:
       preBuild:
         commands:
-          - |
-            set -e
-            echo "preBuild done"
+          - echo "preBuild done"
       build:
         commands:
           - amplifyPush --simple
