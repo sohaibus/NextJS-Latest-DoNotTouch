@@ -1,4 +1,14 @@
 version: 1
+backend:
+    phases:
+      preBuild:
+        commands:
+          - |
+            set -e
+            echo "preBuild done"
+      build:
+        commands:
+          - amplifyPush --simple
 frontend:
   phases:
     preBuild:
